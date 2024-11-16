@@ -1,0 +1,19 @@
+Data Engineer
+1. Ankit Bansal
+2. Sagar Prajapati
+3. Shubham Wadekar
+4. Abhishek Agrawal
+
+Best URL for Data Engineer Basic
+https://www.youtube.com/watch?v=PN3Iu3JWOsY
+https://www.youtube.com/watch?v=yZKJFKu49Dk&list=PLBJe2dFI4sgvQTNNkI3ETYJgNPR4CBpFd
+https://www.youtube.com/watch?v=Qi6uRxGr99g&list=PLf0swTFhTI8oRM0Qv2UGijAkeGZDqs-xF
+https://www.youtube.com/watch?v=uqRRjcsUGgk
+https://www.youtube.com/watch?v=hf2go3E2m8g
+
+https://www.youtube.com/watch?v=ZnQwO6V7pec
+1. Ankit Bansal
+   Netflix Data Cleaning and Analysis Project | End to End Data Engineering Project (SQL + Python)
+   
+
+2.  

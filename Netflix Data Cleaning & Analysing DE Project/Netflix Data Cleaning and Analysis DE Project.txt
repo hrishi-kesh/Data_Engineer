@@ -1,0 +1,18 @@
+Switch Between SQL and PL/SQL use click on task bar of vscode select sql for ms sql and plsql for oracle
+
+1.Tools Required:- Python include(pip install pandas sqlalchemy),  sql server, Jypyter notebook download using pip we can use all these in vscode. And pip install pyodbc(install odbc driver as well)
+
+2. Handling foreign character {It is not yet correct due to some issue}
+2.1 like japanese which is non asci char so in datatype we define nvarchar instead of varchar and also change the column size to whatever max length of characters.
+2.2 If there is null in that column then in jupyter use max(df.column_name.dropna().str.len()) which is remove then count the length
+
+3. Removing of Duplicates 
+
+-- new table for listed in, director, country, cast
+
+-- data type conversions for date added
+-- populate missing values in country, duration columns
+-- populate rest of the nulls as not_available
+-- drop columns director , listed_in, country, cast
+
+
