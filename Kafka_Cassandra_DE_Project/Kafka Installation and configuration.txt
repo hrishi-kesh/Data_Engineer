@@ -1,0 +1,25 @@
+--Download and configuration of kafka
+--YT video name "Install Kafka and zookeeper on windows 11(complete setup)" "Engineering Digest" channel
+
+--Kafka is stream data retieval tool or stream data pipeline tool but it is not data processing tool. Spark can work with streaming as well as batch data
+
+--Path to download:- Write kafka download--> goto-->Binary downloads--> Scala 2.13  - kafka_2.13-3.9.0.tgz (asc, sha512)
+
+--Extract that folder in c drive
+--Goto C:\kafka_2.13-3.9.0\bin\windows-->select all path and write cmd it will open cmd admin in that folder itself
+----- Run this command it will start zookeeper service at port 2181:- zookeeper-server-start.bat ..\..\config\zookeeper.properties
+----- Run this command to start kafka broker:- kafka-server-start.bat ..\..\config\server.properties  -----Brif:- It start kafka broker
+
+----  Run this command to create topic in new cmd admin:- kafka-topics.bat --create --topic 
+my-topic --bootstrap-server localhost:9092 --replication-factor 1 --partitions 3              ----O/P- Created topic my-topic.(It is like a table)
+
+----  Run this command to keep the:-kafka-console-producer.bat --broker-list localhost:9092 --topic my-topic  -----Brif:- It start producer
+
+----  Run this command to :- kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic 
+my-topic --from-beginning     -----Brif:- It start consumer
+
+---- Producer and consumer have to run in diff cmd admin and whatever msg u pass to producer it will show in consumer
+---- You can close the running producer or kafka by ctrl+c in cmd admin
+
+---- If we don't write --from-beginning in this script "kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic 
+my-topic"                  ---- It will show the recent data type in producer once after it started

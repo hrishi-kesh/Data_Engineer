@@ -1,0 +1,56 @@
+------------------Installation and configuration of Cassandra DB-------------------
+1. Goto this link and download latest cassandra https://cassandra.apache.org/_/download.html 
+2. Set the JAVA_HOME path and cassandra path
+3. Check WSL is installed or not because that cassandra file is sh file it will run on windows linux subsystem
+4. wsl --list --verbose     ###Check in Power shell This will show the linux version if installed
+5. wsl --set-default-version 2 ###Set this as default in power shell
+6. wsl -d Ubuntu-22.04       ###To start ubuntu
+7. Goto cd /mnt/c/apache-cassandra-5.0.2/bin
+8. ./cassandra    ###To run cassandra
+9. nodetool status    ###To check cassandra running status
+10. ./cqlsh ###Alternatively, test connectivity with the Cassandra Query Language Shell (cqlsh):
+
+
+---------------------------------------------
+if above steps not working in power shell then install separate java in power shell wsl after step 6
+7. PS C:\Users\khila>  wsl -d Ubuntu-22.04
+inspiron@Inspiron:/mnt/c/Users/khila$ sudo apt update
+sudo apt install openjdk-17-jre-headless
+8. java -version
+openjdk version "17.0.13" 2024-10-15
+OpenJDK Runtime Environment (build 17.0.13+11-Ubuntu-2ubuntu122.04)
+OpenJDK 64-Bit Server VM (build 17.0.13+11-Ubuntu-2ubuntu122.04, mixed mode, sharing)
+
+9. Make changes in cassandra.in.sh file
+
+# JAVA_HOME can optionally be set here
+export JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
+
+#CLASSPATH="$CASSANDRA_CONF"
+export CLASSPATH="$JAVA_HOME/lib:$CASSANDRA_CONF:$CASSANDRA_HOME/lib/*:$CLASSPATH"
+
+10. Now  goto:- cd /mnt/c/apache-cassandra-5.0.2/bin
+
+11. ./cassandra -f
+
+12. ps aux | grep cassandra #This should show a Cassandra process if it has started successfully.
+/usr/lib/jvm/java-17-openjdk-amd64/bin/java ... org.apache.cassandra.service.CassandraDaemon
+#This indicates that Cassandra is running as a Java process, and the JVM is executing the CassandraDaemon.
+13. netstat -tuln | grep 7199 #Verify JMX Service: Ensure that the JMX service, which listens on port 7199, is properly enabled. You can check if it's working by running:
+o/p:-  tcp        0      0 127.0.0.1:7199          0.0.0.0:*               LISTEN 
+
+14. nodetool -h 127.0.0.1 -p 7199 status #Datacenter: datacenter1
+=======================
+Status=Up/Down
+|/ State=Normal/Leaving/Joining/Moving
+--  Address    Load        Tokens  Owns (effective)  Host ID                               Rack
+UN  127.0.0.1  162.71 KiB  16      100.0%            042a0aa9-e7dc-40ca-ab90-636f6ce248ad  rack1
+
+Status (UN): "U" means the node is "Up," and "N" means it is in a "Normal" state, indicating that the Cassandra node is active and functioning correctly.
+Address: The node is running locally (127.0.0.1).
+Load: The node is consuming about 162.71 KiB of data.
+Tokens: This node is managing 16 tokens, which is the partitioning unit in Cassandra.
+Owns (effective): The node owns 100% of the data in the cluster (this is typical for a single-node cluster).
+Host ID: A unique identifier for the node (042a0aa9-e7dc-40ca-ab90-636f6ce248ad).
+Rack: The node is located in "rack1."
+

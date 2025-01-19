@@ -1,0 +1,44 @@
+1. Key Concepts of Cassandra
+Keyspace: This is the equivalent of a database in RDBMS. It contains tables and is used to define replication strategies (how data is duplicated across nodes).
+Table: Cassandra tables are similar to RDBMS tables but are designed for scalability and speed, especially for read-heavy operations.
+Primary Key: In Cassandra, the primary key consists of a partition key and optional clustering columns. The partition key determines how data is distributed across nodes, while clustering columns determine the order of data within the partition.
+
+
+------------------------
+open power shell --> goto> wsl --list --verbose(Version check-->open ubunto-->wsl -d Ubuntu-22.04
+-->netstat -tuln | grep 7199 then
+To open CQL write this one "cqlsh 127.0.0.1 9042"
+O/p:- Connected to Test Cluster at 127.0.0.1:9042
+[cqlsh 6.2.0 | Cassandra 5.0.2 | CQL spec 3.4.7 | Native protocol v5]  
+
+1. Create a Keyspace (like a database in RDBMS):
+sql
+Copy code
+CREATE KEYSPACE IF NOT EXISTS my_keyspace
+WITH REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor' : 1};
+2. Use the Keyspace:
+sql
+Copy code
+USE my_keyspace;
+3. Create a Table:
+sql
+Copy code
+CREATE TABLE IF NOT EXISTS users (
+    user_id UUID PRIMARY KEY,
+    first_name TEXT,
+    last_name TEXT,
+    email TEXT
+);
+4. Insert Data:
+sql
+Copy code
+INSERT INTO users (user_id, first_name, last_name, email)
+VALUES (uuid(), 'John', 'Doe', 'john.doe@example.com');
+5. Select Data:
+sql
+Copy code
+SELECT * FROM users;
+6. Describe Tables:
+sql
+Copy code
+DESCRIBE TABLE users;
