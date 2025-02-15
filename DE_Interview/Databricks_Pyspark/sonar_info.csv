@@ -1,0 +1,11 @@
+sonar_id,created_date,status,location
+A123,2024-01-15,Active,New York
+B456,2023-12-10,Inactive,Los Angeles
+C789,,Active,Chicago
+A234,2022-06-30,Inactive,Houston
+B567,2021-09-20,Active,Phoenix
+C890,,Inactive,Philadelphia
+A345,2023-11-05,Active,San Diego
+B678,2020-08-14,Inactive,Dallas
+C901,,Active,San Francisco
+A456,2019-03-27,Inactive,Seattle

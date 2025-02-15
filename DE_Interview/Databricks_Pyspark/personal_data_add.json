@@ -1,0 +1,302 @@
+[
+    {
+        "name": "John Doe",
+        "dob": "1961-09-20",
+        "age": 64,
+        "gender": "Female",
+        "email": "john.doe@gmail.com",
+        "phone": "1-787-3731",
+        "address": {
+            "add_type": "Permanent",
+            "street": "4737 Pine Blvd",
+            "city": "Dallas",
+            "state": "NY",
+            "zip": "85001"
+        }
+    },
+    {
+        "name": "Jane Smith",
+        "dob": "1972-10-09",
+        "age": 53,
+        "gender": "Male",
+        "email": "jane.smith@hotmail.com",
+        "phone": "1-787-4555",
+        "address": {
+            "add_type": "Permanent",
+            "street": "9451 Pine Blvd",
+            "city": "San Francisco",
+            "state": "OH",
+            "zip": "75201"
+        }
+    },
+    {
+        "name": "Robert Brown",
+        "dob": "2005-06-25",
+        "age": 20,
+        "gender": "Female",
+        "email": "robert.brown@hotmail.com",
+        "phone": "1-984-7458",
+        "address": {
+            "add_type": "Work",
+            "street": "1737 Pine Blvd",
+            "city": "San Francisco",
+            "state": "FL",
+            "zip": "75201"
+        }
+    },
+    {
+        "name": "Emily Davis",
+        "dob": "1991-08-01",
+        "age": 34,
+        "gender": "Female",
+        "email": "emily.davis@yahoo.com",
+        "phone": "1-533-9364",
+        "address": {
+            "add_type": "Temporary",
+            "street": "9389 Main St",
+            "city": "Phoenix",
+            "state": "PA",
+            "zip": "77001"
+        }
+    },
+    {
+        "name": "Michael Johnson",
+        "dob": "2002-07-14",
+        "age": 23,
+        "gender": "Female",
+        "email": "michael.johnson@hotmail.com",
+        "phone": "1-307-2809",
+        "address": {
+            "add_type": "Temporary",
+            "street": "4386 Main St",
+            "city": "New York",
+            "state": "CA",
+            "zip": "94101"
+        }
+    },
+    {
+        "name": "Sarah Wilson",
+        "dob": "1985-05-29",
+        "age": 40,
+        "gender": "Female",
+        "email": "sarah.wilson@gmail.com",
+        "phone": "1-334-3043",
+        "address": {
+            "add_type": "Work",
+            "street": "2562 Pine Blvd",
+            "city": "Los Angeles",
+            "state": "PA",
+            "zip": "75201"
+        }
+    },
+    {
+        "name": "David Martinez",
+        "dob": "1961-05-18",
+        "age": 64,
+        "gender": "Female",
+        "email": "david.martinez@outlook.com",
+        "phone": "1-808-5870",
+        "address": {
+            "add_type": "Billing",
+            "street": "5985 Main St",
+            "city": "San Diego",
+            "state": "NY",
+            "zip": "94101"
+        }
+    },
+    {
+        "name": "Laura Anderson",
+        "dob": "1964-11-09",
+        "age": 61,
+        "gender": "Female",
+        "email": "laura.anderson@yahoo.com",
+        "phone": "1-586-3915",
+        "address": {
+            "add_type": "Work",
+            "street": "9906 Oak Rd",
+            "city": "Chicago",
+            "state": "AZ",
+            "zip": "85001"
+        }
+    },
+    {
+        "name": "James White",
+        "dob": "1969-06-26",
+        "age": 56,
+        "gender": "Female",
+        "email": "james.white@yahoo.com",
+        "phone": "1-217-5480",
+        "address": {
+            "add_type": "Temporary",
+            "street": "8509 2nd Ave",
+            "city": "San Francisco",
+            "state": "IL",
+            "zip": "85001"
+        }
+    },
+    {
+        "name": "Emma Taylor",
+        "dob": "1994-05-10",
+        "age": 31,
+        "gender": "Female",
+        "email": "emma.taylor@outlook.com",
+        "phone": "1-237-1703",
+        "address": {
+            "add_type": "Billing",
+            "street": "7326 Oak Rd",
+            "city": "Houston",
+            "state": "FL",
+            "zip": "77001"
+        }
+    },
+    {
+        "name": "Daniel Thomas",
+        "dob": "1991-12-01",
+        "age": 34,
+        "gender": "Male",
+        "email": "daniel.thomas@yahoo.com",
+        "phone": "1-980-9402",
+        "address": {
+            "add_type": "Shipping",
+            "street": "6107 Oak Rd",
+            "city": "Dallas",
+            "state": "OH",
+            "zip": "85001"
+        }
+    },
+    {
+        "name": "Olivia Harris",
+        "dob": "1997-11-27",
+        "age": 28,
+        "gender": "Male",
+        "email": "olivia.harris@outlook.com",
+        "phone": "1-193-5808",
+        "address": {
+            "add_type": "Permanent",
+            "street": "445 Pine Blvd",
+            "city": "Phoenix",
+            "state": "CA",
+            "zip": "60601"
+        }
+    },
+    {
+        "name": "Matthew Walker",
+        "dob": "1999-05-27",
+        "age": 26,
+        "gender": "Female",
+        "email": "matthew.walker@hotmail.com",
+        "phone": "1-365-2137",
+        "address": {
+            "add_type": "Permanent",
+            "street": "8269 Pine Blvd",
+            "city": "Houston",
+            "state": "OH",
+            "zip": "75201"
+        }
+    },
+    {
+        "name": "Sophia Lewis",
+        "dob": "1980-01-22",
+        "age": 45,
+        "gender": "Male",
+        "email": "sophia.lewis@yahoo.com",
+        "phone": "1-110-8605",
+        "address": {
+            "add_type": "Permanent",
+            "street": "8518 Main St",
+            "city": "Houston",
+            "state": "PA",
+            "zip": "94101"
+        }
+    },
+    {
+        "name": "Elijah Young",
+        "dob": "1970-12-19",
+        "age": 55,
+        "gender": "Male",
+        "email": "elijah.young@gmail.com",
+        "phone": "1-572-3184",
+        "address": {
+            "add_type": "Shipping",
+            "street": "4613 Pine Blvd",
+            "city": "New York",
+            "state": "TX",
+            "zip": "77001"
+        }
+    },
+    {
+        "name": "Isabella King",
+        "dob": "1960-12-02",
+        "age": 65,
+        "gender": "Male",
+        "email": "isabella.king@gmail.com",
+        "phone": "1-366-9425",
+        "address": {
+            "add_type": "Billing",
+            "street": "7437 Oak Rd",
+            "city": "New York",
+            "state": "CA",
+            "zip": "85001"
+        }
+    },
+    {
+        "name": "Benjamin Scott",
+        "dob": "1978-07-18",
+        "age": 47,
+        "gender": "Male",
+        "email": "benjamin.scott@outlook.com",
+        "phone": "1-759-3502",
+        "address": {
+            "add_type": "Temporary",
+            "street": "6461 Pine Blvd",
+            "city": "Phoenix",
+            "state": "OH",
+            "zip": "75201"
+        }
+    },
+    {
+        "name": "Mia Green",
+        "dob": "1973-06-21",
+        "age": 52,
+        "gender": "Male",
+        "email": "mia.green@yahoo.com",
+        "phone": "1-202-7392",
+        "address": {
+            "add_type": "Work",
+            "street": "6906 Main St",
+            "city": "Los Angeles",
+            "state": "OH",
+            "zip": "90001"
+        }
+    },
+    {
+        "name": "William Hall",
+        "dob": "2002-08-26",
+        "age": 23,
+        "gender": "Female",
+        "email": "william.hall@gmail.com",
+        "phone": "1-744-5296",
+        "address": {
+            "add_type": "Shipping",
+            "street": "2631 2nd Ave",
+            "city": "Chicago",
+            "state": "FL",
+            "zip": "92101"
+        }
+    },
+    {
+        "name": "Charlotte Allen",
+        "dob": "1989-05-03",
+        "age": 36,
+        "gender": "Male",
+        "email": "charlotte.allen@hotmail.com",
+        "phone": "1-147-1936",
+        "address": {
+            "add_type": "Billing",
+            "street": "8136 Main St",
+            "city": "Dallas",
+            "state": "OH",
+            "zip": "60601"
+        }
+    }
+]
