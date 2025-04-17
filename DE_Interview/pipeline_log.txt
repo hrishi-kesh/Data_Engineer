@@ -1,0 +1,12 @@
+[2025-04-15 08:00:00] INFO - Starting data pipeline job: daily_sales_etl
+[2025-04-15 08:00:01] INFO - Extracting data from source: sales_db
+[2025-04-15 08:00:05] INFO - Extract completed. Rows extracted: 10234
+[2025-04-15 08:00:07] INFO - Starting transformation phase
+[2025-04-15 08:00:10] ERROR - Null value found in 'price' column during transformation step 'clean_prices'
+[2025-04-15 08:00:12] WARNING - Some rows were dropped due to missing data
+[2025-04-15 08:00:14] INFO - Transformation phase completed with warnings
+[2025-04-15 08:00:15] INFO - Loading data into target: warehouse.daily_sales
+[2025-04-15 08:00:20] ERROR - Database connection timeout during load phase
+[2025-04-15 08:00:21] INFO - Retrying data load (attempt 1 of 3)
+[2025-04-15 08:00:26] INFO - Load successful after retry
+[2025-04-15 08:00:30] INFO - Data pipeline job completed with status: SUCCESS_WITH_WARNINGS

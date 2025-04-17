@@ -1,0 +1,6 @@
+ename,age,gender,email,empid,deptid,sal,is_adult,DOJ
+Alice,30,F,alice@example.com,101,1,70000,Yes,2020-12-31
+Bob,25,M,bob@example.com,102,2,55000,Yes,2021-12-31
+Charlie,35,M,charlie@example.com,103,1,80000,Yes,2022-12-31
+David,40,M,david@example.com,104,3,60000,Yes,2023-12-31
+Eve,28,F,eve@example.com,105,2,52000,Yes,2024-12-31
