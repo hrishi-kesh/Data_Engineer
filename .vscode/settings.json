@@ -1,6 +1,0 @@
-{
-    "notebook.output.wordWrap": true,
-    "files.watcherExclude": {
-        "**/target": true
-    }
-}
