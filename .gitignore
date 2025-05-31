@@ -3,3 +3,10 @@ Pandas-Cheat-Sheet_Dataquest.pdf
 Datasets/bank_transactions.csv
 Datasets/Churn_Modelling.csv
 ".metals/" 
+.metals/
+*.mv.db
+*.csv
+*.db
+*.mb
+*.json
+/opt/airflow/scripts/output/
