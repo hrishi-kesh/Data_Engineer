@@ -2,3 +2,12 @@ Pandas_Cheat_Sheet.pdf
 Pandas-Cheat-Sheet_Dataquest.pdf
 Datasets/bank_transactions.csv
 Datasets/Churn_Modelling.csv
+".metals/" 
+.metals/
+*.mv.db
+*.csv
+*.db
+*.mb
+*.json
+.venv
+/opt/airflow/scripts/output/
