@@ -9,5 +9,6 @@ Datasets/Churn_Modelling.csv
 *.db
 *.mb
 *.json
+*.crc
 .venv
 /opt/airflow/scripts/output/
